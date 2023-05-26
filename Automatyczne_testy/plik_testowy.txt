@@ -1,0 +1,24 @@
+#TEST 1 Dane wejściowe: 4 7 14 167 f + f + f P f P f 47 12 45 23 f - f - f q
+#Dodawanie, odejmowanie, drukowanie zawartości stosu, usuwanie liczby ze szczytu stosu. 
+4 7 14 167 f + f + f P f P f 47 12 45 23 f - f - f q
+#TEST 2 Dane wejściowe: -45 -56 -23 -67 f * f * f  c f 123 -45 34 17 f / f / f q
+#Próba wprowadzania liczb ujemnych, mnożenie,dzielenie, czyszczenie zawartości stosu.
+-45 -56 -23 -67 f * f * f r f c f 123 -45 34 -17 f / f / f q
+#TEST 3 Dane wejściowe: 24 -57 f r f d f d f c f 234 67 45 f p q
+#Działanie funkcji reverse, drukowanie liczby ze szczytu oraz próba jej duplikacji
+24 -57 f r f d f d f c f 234 67 45 f p q
+#TEST 4 Dane wejściowe: 2 0 f / r f / f P d 5 r q 
+#Dzielenie przez zero,odwrócenie liczb(reverse),ponowna próba dzielenia,duplikacja,reverse.
+2 0 f / r f / f P d 5 r q
+#TEST 5 Dane Wejściowe: --45    - 45 f 1.57    2345.2    0.0 -0.0 -     0.0 f q
+#Odróżnienie liczb ujemnych od odejmowania, odstępy między znakami, liczby zmiennoprzecinkowe
+--45         - 45 f 1.57      2345.2    0.0 -0.0 -     0.0 f q
+#TEST 6 Dane wejściowe:  [ ' ' ] e kjs 2 f + - * P f + - / q
+#Nieprawdiłowe opcjie,próba operacji na jednej liczby oraz na pustym stosie.
+ [ ' ' ] e kjs 2 + - / P f + - * q
+#TEST 7 Dane wejściowe: 12 567 32 54 24 f + f - f * f / f + f 12 4 -567drpPfq
+#Wykonywanie działań do skutku, wczytywanie znaków obok siebie.
+12 567 38337 125646 24 f + f - f * f / f + f 12 4 -567drpPfq
+#TEST 8 Dane wejściowe: 2147483647 1 f + f c -2147483647 -1 f + f c 9999999999 0000000000 f / f q 
+#Wczytywanie liczb całkowitych poza ich zakres(od -2147483647 do 2147483367).
+2147483647 1 f + f c -2147483647 -1 f + f c 9999999999 0000000000 f / q
